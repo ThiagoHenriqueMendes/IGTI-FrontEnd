@@ -223,56 +223,47 @@ const condidtionAnd = (isJava, isJavaScript, isPython, valueTxt, itemMap) => {
 };
 
 const condidtionOR2 = (isJava, isJavaScript, isPython, valueTxt, itemMap) => {
-  let conditionAccepted = true;
+  let conditionAccepted = false;
   const { name, programmingLanguages } = itemMap;
-  if (
-    conditionAccepted &&
-    isJava &&
-    constainsLanguage(programmingLanguages, 'Java')
-  ) {
+  if (isJava && constainsLanguage(programmingLanguages, 'Java')) {
     console.log('entrou aqui no Java');
     conditionAccepted = true;
-  } else if (
-    conditionAccepted &&
-    isJava === false &&
-    constainsLanguage(programmingLanguages, 'Java')
-  ) {
-    console.log('entrou aqui no Java');
-    conditionAccepted = false;
   }
+  // else if (
+  //   conditionAccepted &&
+  //   isJava === false &&
+  //   constainsLanguage(programmingLanguages, 'Java')
+  // ) {
+  //   console.log('entrou aqui no Java');
+  //   conditionAccepted = false;
+  // }
   //-------------------------------------------------------------------------------
 
-  if (
-    conditionAccepted &&
-    isJavaScript &&
-    constainsLanguage(programmingLanguages, 'JavaScript')
-  ) {
+  if (isJavaScript && constainsLanguage(programmingLanguages, 'JavaScript')) {
     console.log('entrou aqui no Java');
     conditionAccepted = true;
-  } else if (
-    conditionAccepted &&
-    isJavaScript === false &&
-    constainsLanguage(programmingLanguages, 'JavaScript')
-  ) {
-    console.log('entrou aqui no Java');
-    conditionAccepted = false;
   }
+  //  else if (
+  //   conditionAccepted &&
+  //   isJavaScript === false &&
+  //   constainsLanguage(programmingLanguages, 'JavaScript')
+  // ) {
+  //   console.log('entrou aqui no Java');
+  //   conditionAccepted = false;
+  // }
   //-------------------------------------------------------------------------------
-  if (
-    conditionAccepted &&
-    isPython &&
-    constainsLanguage(programmingLanguages, 'Python')
-  ) {
+  if (isPython && constainsLanguage(programmingLanguages, 'Python')) {
     console.log('entrou aqui no Java');
     conditionAccepted = true;
-  } else if (
-    conditionAccepted &&
-    isPython === false &&
-    constainsLanguage(programmingLanguages, 'Python')
-  ) {
-    console.log('entrou aqui no Java');
-    conditionAccepted = false;
   }
+  //  else if (
+  //   conditionAccepted &&
+  //   isPython === false &&
+  //   constainsLanguage(programmingLanguages, 'Python')
+  // ) {
+  //   console.log('entrou aqui no Java');
+  //   conditionAccepted = false;
+  // }
   //-------------------------------------------------------------------------------
 
   if (conditionAccepted && valueTxt.length > 0) {
