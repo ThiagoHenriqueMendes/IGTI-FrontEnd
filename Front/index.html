@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev's</title>
+    <title>Calculadora</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <style>
+    .marginR {
+      margin-right: 10px;
+    }
+
+    .marginL {
+      margin-left: 10px;
+    }
+    .align {
+      float: right;
+      margin-right: 20px;
+    }
+    .visibleFalse {
+      display: none;
+    }
+    .border {
+      margin-left: 10px;
+      border: 1px solid #9e9e9e;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <div>
+      <label> Pesquisar por nome: </label>
+      <input type="text" id="txtBusca" />
+    </div>
+    <div class="row">
+      <label class="marginL">
+        <input type="checkbox" id="chkJava" />
+        <span class="marginR">Java</span>
+      </label>
+      <label>
+        <input type="checkbox" id="chkJavaScript" />
+        <span class="marginR"> JavaScript</span>
+      </label>
+      <label>
+        <input type="checkbox" id="chkPyton" />
+        <span class="marginR">Pyton</span>
+      </label>
+      <div class="align">
+        <label>
+          <input name="group1" type="radio" id="rdlAnd" checked />
+          <span>E</span>
+        </label>
+        <label>
+          <input name="group1" type="radio" id="rdlOR" />
+          <span>OU</span>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m10 offset-m1">
+        <h1 class="header visibleFalse" id="h1CountDevs">Teste</h1>
+      </div>
+    </div>
+
+    <div class="row" id="rowGrid">
+      <!-- <div class="col s4">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="img/java.png" alt="" class="circle responsive-img" />
+            </div>
+            <div class="col s12">
+              <span class="black-text">
+                <b>This is a square imagessssssssssssssssss.</b> </span
+              ><br />
+              <div class="col s2">
+                <img src="img/java.png" alt="" class="circle responsive-img" />
+              </div>
+              <div class="col s2">
+                <img src="img/java.png" alt="" class="circle responsive-img" />
+              </div>
+              <div class="col s2">
+                <img src="img/java.png" alt="" class="circle responsive-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="script/Devs.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
